@@ -10,4 +10,7 @@ export class Cities extends BaseEntity {
 
   @Column()
   searched: number;
+
+  @Column()
+  last_searched: string;
 }
