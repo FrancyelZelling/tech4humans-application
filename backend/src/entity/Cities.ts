@@ -8,7 +8,7 @@ export class Cities extends BaseEntity {
   @Column()
   city_id: number;
 
-  @Column()
+  @Column({ default: 1 })
   searched: number;
 
   @Column()

@@ -25,6 +25,7 @@
 - id: primary_key
 - city*id: int - \_id é unico de cada cidade, strings podem conter inconsistências*
 - searched: int - _valor para ser incrementado cada vez que a mesma cidade for procurada_
+- last_searched: string - _para ordenar pelas pesquisas recentes_
 
 ## Misc
 

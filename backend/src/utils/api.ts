@@ -5,10 +5,10 @@ dotenv.config();
 
 const apiKey = process.env.API_KEY;
 
-export const cityString = async () => {
+export const cityString = async (cityName: string) => {
   const result = await axios.get(
-    `https://api.openweathermap.org/data/2.5/weather?q=sales oliveira&appid=${apiKey}`
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&lang=pt_br&units=metric`
   );
 
-  console.log(result.data);
+  return result.data;
 };
