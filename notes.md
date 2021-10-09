@@ -13,8 +13,8 @@
 ## Backend
 
 - [x] conexão com api do openwheatermap
-- [ ] endpoint para fazer as buscas
-- [ ] retornar busca com dados da openwheatermap api
+- [x] endpoint para fazer as buscas
+- [x] retornar busca com dados da openwheatermap api
 - [x] incrementar valor da cidade pesquisada caso a resposta for valida
 - [x] criar row caso seja a primeira pesquisa da cidade
 
