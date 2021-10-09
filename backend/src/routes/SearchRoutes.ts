@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { cityString } from "../utils/api";
+import { cityString, cityId } from "../utils/api";
 import { Cities } from "../entity/Cities";
 
 const searchRouter = Router();
@@ -51,4 +51,19 @@ searchRouter.get("/:name", async (req, res) => {
   return res.status(200).json({ msg: "all good", param: name });
 });
 
+searchRouter.get("/top/5", async (req, res) => {
+  try {
+    const topFiveSearched = await Cities.find({
+      order: {
+        searched: "DESC",
+      },
+      take: 5,
+    });
+
+    return res.status(200).json(topFiveSearched);
+  } catch (error) {
+    console.log(error);
+    return res.status(500).json({ msg: "Failed to make request to database" });
+  }
+});
 export default searchRouter;

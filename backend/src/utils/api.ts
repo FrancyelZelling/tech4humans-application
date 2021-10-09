@@ -12,3 +12,11 @@ export const cityString = async (cityName: string) => {
 
   return result.data;
 };
+
+export const cityId = async (id: number) => {
+  const result = await axios.get(
+    `https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=${apiKey}&lang=pt_br&units=metric`
+  );
+
+  return result.data;
+};

@@ -12,11 +12,11 @@
 
 ## Backend
 
-- [ ] conexão com api do openwheatermap
+- [x] conexão com api do openwheatermap
 - [ ] endpoint para fazer as buscas
 - [ ] retornar busca com dados da openwheatermap api
-- [ ] incrementar valor da cidade pesquisada caso a resposta for valida
-- [ ] criar row caso seja a primeira pesquisa da cidade
+- [x] incrementar valor da cidade pesquisada caso a resposta for valida
+- [x] criar row caso seja a primeira pesquisa da cidade
 
 ## Database
 
@@ -25,7 +25,7 @@
 - id: primary_key
 - city*id: int - \_id é unico de cada cidade, strings podem conter inconsistências*
 - searched: int - _valor para ser incrementado cada vez que a mesma cidade for procurada_
-- last_searched: string - _para ordenar pelas pesquisas recentes_
+- last*searched: string - \_para ordenar pelas pesquisas recentes*
 
 ## Misc
 
