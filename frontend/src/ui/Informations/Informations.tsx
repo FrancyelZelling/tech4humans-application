@@ -1,24 +1,28 @@
 import React from "react";
 
+import "./styles.css";
+
 export const Informations = () => {
   return (
-    <section>
-      <h1>Sales Oliveira</h1>
-      <h3>São Paulo, Brasil</h3>
+    <section className="information-container">
+      <h1 className="city-name">Sales Oliveira</h1>
+      <h3 className="state-country">São Paulo, Brasil</h3>
 
-      <div className="tempCard">
-        <h2>Temperatura Atual</h2>
-        <p>34ºc</p>
-      </div>
+      <div className="card-container">
+        <div className="card">
+          <h2 className="card-title">Temperatura Atual</h2>
+          <p className="card-info">34ºc</p>
+        </div>
 
-      <div className="wheaterCard">
-        <h2>Clima</h2>
-        <p>Nublado</p>
-      </div>
+        <div className="card">
+          <h2 className="card-title">Clima</h2>
+          <p className="card-info">Nublado</p>
+        </div>
 
-      <div className="humidityCard">
-        <h2>Humidade</h2>
-        <p>70%</p>
+        <div className="card">
+          <h2 className="card-title">Umidade do ar</h2>
+          <p className="card-info">70%</p>
+        </div>
       </div>
     </section>
   );

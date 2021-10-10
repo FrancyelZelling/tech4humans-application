@@ -2,9 +2,11 @@ import React from "react";
 import { SearchBar } from "../SearchBar/SearchBar";
 import { Informations } from "../Informations/Informations";
 
+import "./styles.css";
+
 const LeftPanel = () => {
   return (
-    <section>
+    <section className="container">
       <SearchBar />
       <Informations />
     </section>

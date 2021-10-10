@@ -2,11 +2,13 @@ input[type="text"] {
   outline: none !important;
   border: 2px solid #aad8d3;
   border-radius: 4px;
-  width: 300px;
+  width: 250px;
   height: 30px;
   font-weight: 300;
   font-style: italic;
   padding-left: 10px;
+  margin: 15px auto;
+  align-self: center;
 }
 
 input[type="text"],

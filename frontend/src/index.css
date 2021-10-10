@@ -7,6 +7,10 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
   padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }

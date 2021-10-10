@@ -1,0 +1,44 @@
+.information-container {
+  background-color: #00adb5;
+  width: 400;
+  padding: 25px;
+  border-radius: 4px;
+}
+
+h1.city-name {
+  font-size: 1.9rem;
+  color: #393e46;
+}
+
+h3.state-country {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  margin: 20px 0;
+}
+
+.card {
+  width: 250px;
+  height: 60px;
+  background-color: #eeeeee;
+  margin: 25px 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.card-info {
+  align-self: center;
+  margin-top: 5px;
+  color: #00adb5;
+}
