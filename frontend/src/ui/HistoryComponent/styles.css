@@ -1,0 +1,56 @@
+.history-component {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+  margin: 25px 15px;
+}
+
+h2.history-title {
+  font-size: 1.2rem;
+  color: #00adb5;
+  margin: 20px 0;
+}
+
+.history-card-container {
+  background-color: #aad8d3;
+  border-radius: 4px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 480px) {
+  .history-component {
+    width: 400px;
+    margin: 25px 25px;
+  }
+
+  h2.history-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .history-component {
+    width: 600px;
+    margin: 25px 50px;
+  }
+
+  h2.history-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .history-component {
+    width: 400px;
+    margin: 25px 50px;
+  }
+
+  h2.history-title {
+    font-size: 1.3rem;
+  }
+}

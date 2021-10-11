@@ -1,0 +1,94 @@
+#history-card {
+  background-color: #eeeeee;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  border-radius: 4px;
+}
+
+.details-section,
+.info-section {
+  display: flex;
+  align-items: center;
+  margin: 5px 10px;
+}
+
+.info-section {
+  justify-content: space-between;
+}
+
+.details-section {
+  justify-content: space-evenly;
+}
+
+.city-name {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #00adb5;
+}
+
+.info-search {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.details-section p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin: 0 5px;
+}
+
+@media screen and (min-width: 480px) {
+  #history-card {
+    width: 80%;
+  }
+
+  .city-name {
+    font-size: 1.1rem;
+  }
+
+  .info-search {
+    font-size: 0.8rem;
+  }
+
+  .details-section p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #history-card {
+    width: 80%;
+  }
+
+  .city-name {
+    font-size: 1.3rem;
+  }
+
+  .info-search {
+    font-size: 0.9rem;
+  }
+
+  .details-section p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #history-card {
+    width: 80%;
+  }
+
+  .city-name {
+    font-size: 1.2rem;
+  }
+
+  .info-search {
+    font-size: 0.8rem;
+  }
+
+  .details-section p {
+    font-size: 1rem;
+  }
+}
