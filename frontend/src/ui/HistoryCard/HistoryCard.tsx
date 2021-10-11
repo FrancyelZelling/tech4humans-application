@@ -1,20 +1,26 @@
 import React from "react";
 import "./styles.css";
+import { ApiCityInterface } from "../../services/store";
 
-const HistoryCard = () => {
+interface HistoryCardInterface {
+  city: ApiCityInterface;
+  lastSearched: boolean;
+}
+
+const HistoryCard: React.FC<HistoryCardInterface> = ({
+  city,
+  lastSearched,
+}) => {
+  const parsedDate = new Date(city.last_searched);
+  const formatedDate = parsedDate.toLocaleString("en-GB");
+
   return (
     <section id="history-card">
       <div className="info-section">
-        <h3 className="city-name">Sales Oliveira</h3>
-        <p className="info-search">12 Buscas</p>
-      </div>
-
-      <div className="details-section">
-        <p className="history-temp">34ºc</p>
-        <p className="history-wheather">Nublado</p>
-        <div className="history-humidity">
-          <p>70%</p>
-        </div>
+        <h3 className="city-name">{city.city_name}</h3>
+        <p className="info-search">
+          {lastSearched === false ? city.searched + " vezes" : formatedDate}
+        </p>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import "reflect-metadata";
 import { createConnection } from "typeorm";
 import dotenv from "dotenv";
@@ -7,6 +8,7 @@ import SearchRouter from "./routes/SearchRoutes";
 const result = dotenv.config();
 
 const app = express();
+app.use(cors());
 const port = process.env.PORT;
 
 createConnection().then(async (connection) => {
